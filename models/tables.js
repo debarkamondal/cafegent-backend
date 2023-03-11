@@ -6,6 +6,10 @@ const bookTableSchema = new Schema({
     type: Number,
     required: true,
   },
+  status: {
+    type: Boolean,
+    default: false, // Tracking availability of the tables true = available false = unavailable
+  },
   phone: {
     type: Number,
     max: [9999999999, "The entered number is invalid"],
