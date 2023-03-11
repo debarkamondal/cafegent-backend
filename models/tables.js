@@ -14,7 +14,6 @@ const bookTableSchema = new Schema({
     type: Number,
     max: [9999999999, "The entered number is invalid"],
     min: [6000000000, "The entered number is invalid"],
-    unique: true,
     required: true,
   },
   date: {

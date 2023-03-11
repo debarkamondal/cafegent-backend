@@ -9,8 +9,8 @@ router.post("/book", async (req, res) => {
   // Checking if the table is already booked or not
   try {
     let table = await bookTable.findOne({ table: req.body.table });
-    console.log(req.body.table);
     if (!table.status) {
+      console.log(req.body);
       console.log(table);
       return res.status(400).send("Table already booked");
     }
