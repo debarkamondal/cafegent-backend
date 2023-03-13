@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 //Routes available
-app.use("/api/table", require("./routes/tables"));
+app.use("/api/table", require("./routes/table"));
 
 app.listen(port, () => {
   console.log(

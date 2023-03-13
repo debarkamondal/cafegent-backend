@@ -1,11 +1,11 @@
 const express = require("express");
-const table = require("../models/table");
+const table = require("../models/tables");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
-/**
+/**--------------------------------------------------------------------------------------------------------------------------------/
  * Create a new table "/api/table/createtable"
  * ! Admin only API
  */
@@ -23,7 +23,7 @@ router.post("/createtable", async (req, res) => {
   }
 });
 
-/**
+/**--------------------------------------------------------------------------------------------------------------------------------/
  * Create a new table "/api/table/booktable"
  * * Public API
  * @param bookTable : fetches and stores the information about the table to be booked
