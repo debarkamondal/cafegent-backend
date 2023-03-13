@@ -1,6 +1,7 @@
 const connectToMongo = require("./db");
 const express = require("express");
 const cors = require("cors");
+
 const dotEnv = require("dotenv").config();
 const app = express();
 
@@ -12,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 //Routes available
-app.use("/api/table", require("./routes/bookTable"));
+app.use("/api/table", require("./routes/tables"));
 
 app.listen(port, () => {
   console.log(
