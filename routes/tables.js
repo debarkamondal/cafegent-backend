@@ -6,8 +6,8 @@ const jwt = require("jsonwebtoken");
 const JWT_SECRET = process.env.JWT_SECRET;
 
 /**
- * * Create a new table "/api/table/createtable"
- * ! Only to be used by admin and not to exposed over the public internet
+ * Create a new table "/api/table/createtable"
+ * ! Admin only API
  */
 
 router.post("/createtable", async (req, res) => {
@@ -24,8 +24,8 @@ router.post("/createtable", async (req, res) => {
 });
 
 /**
- * * Create a new table "/api/table/booktable"
- *
+ * Create a new table "/api/table/booktable"
+ * * Public API
  * @param bookTable : fetches and stores the information about the table to be booked
  */
 
@@ -38,21 +38,11 @@ router.put("/booktable", async (req, res) => {
       return res.status(500).send("Table already booked");
     }
 
-    // Updating table if it is available
+    //* Updating table if it is available
     bookTable.tableNo = req.body.tableNo;
     bookTable.phone = req.body.phone;
     bookTable.availability = false;
     bookTable.save();
-    // Booking table if the table is available
-    // const book = await bookTable.findOneAndUpdate(
-    //   { table: req.body.tableNo },
-    //   {
-    //     tableNo: req.body.tableNo,
-    //     phone: req.body.phone,
-    //     availability: false,
-    //   },
-    //   { new: true }
-    // );
 
     // Creating and sending JWT.
     const data = {
