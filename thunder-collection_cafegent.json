@@ -1,0 +1,57 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "cafegent",
+    "dateExported": "2023-03-13T06:26:41.365Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9bb65d70-0473-4f4f-aed4-8fdcae73a0d7",
+            "colId": "464d85c0-e538-4327-9f64-2c8f4ffb6207",
+            "containerId": "",
+            "name": "createTable",
+            "url": "http://localhost:5000/api/table/createtable",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-11T22:01:12.408Z",
+            "modified": "2023-03-13T06:03:02.890Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"tableNo\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "310d1ac5-e06a-4d7f-94fb-fa00b2ca5424",
+            "colId": "464d85c0-e538-4327-9f64-2c8f4ffb6207",
+            "containerId": "",
+            "name": "bookTable",
+            "url": "http://localhost:5000/api/table/booktable",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-03-13T06:02:10.911Z",
+            "modified": "2023-03-13T06:04:08.355Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"tableNo\": 1,\n  \"phone\": 8888888888\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
