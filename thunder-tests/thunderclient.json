@@ -131,5 +131,28 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "479da564-fff0-4b6d-8cea-352aa541e5af",
+    "colId": "cdd49bc7-db8e-402f-897d-913adc8e36b9",
+    "containerId": "",
+    "name": "generate",
+    "url": "http://localhost:5000/api/bill/generate",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-03-14T13:10:21.370Z",
+    "modified": "2023-03-14T13:22:39.418Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "authToken",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZU5vIjoiMSIsInBob25lIjo4ODg4ODg4ODg4LCJfaWQiOiI2NDEwNTU3YTI1NmJiMWQwY2QzOWQ5ZWEiLCJpYXQiOjE2Nzg3OTcxODd9.gDnhc7mSLfwnnmVbNpGWYCxSeaBtPCokHRT88Kgxf4Y"
+      }
+    ],
+    "params": [],
+    "tests": []
   }
 ]
