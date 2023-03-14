@@ -8,7 +8,7 @@ const menuItems = require("../models/menuItems");
 const router = express.Router();
 
 //---------------------------------------------------Creating a new menu item-----------------------------------------------------//
-router.post("/addItem", async (req, res) => {
+router.post("/additem", async (req, res) => {
   try {
     const newMenuItem = await menuItems.create({
       name: req.body.name,
@@ -30,8 +30,7 @@ router.put("/edititem", async (req, res) => {
     const newMenuItem = await menuItems.findById(req.body._id);
     for (key in req.body) {
       if (key === "_id") continue;
-      console.log(newMenuItem.key);
-      req.body.key ? (newMenuItem.key = req.body.key) : null;
+      if (req.body[key]) newMenuItem[key] = req.body[key];
     }
     newMenuItem.save();
     res.status(200).json(newMenuItem);

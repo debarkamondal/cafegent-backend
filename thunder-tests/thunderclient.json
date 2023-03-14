@@ -1,0 +1,107 @@
+[
+  {
+    "_id": "dd48a282-3c99-4b78-b43e-b8d0f1e8a779",
+    "colId": "caf31c25-ed24-4f60-975f-bc73aebf0c1a",
+    "containerId": "",
+    "name": "create",
+    "url": "http://localhost:5000/api/table/create",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-03-14T10:51:18.477Z",
+    "modified": "2023-03-14T11:08:06.229Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"tableNo\": \"2\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "90a06517-da7a-4877-83c3-abc03c24d2ec",
+    "colId": "caf31c25-ed24-4f60-975f-bc73aebf0c1a",
+    "containerId": "",
+    "name": "book",
+    "url": "http://localhost:5000/api/table/book",
+    "method": "PUT",
+    "sortNum": 20000,
+    "created": "2023-03-14T11:01:34.891Z",
+    "modified": "2023-03-14T11:08:47.575Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"tableNo\": \"1\",\n  \"phone\": 8888888888\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "dab755e2-7072-4ac0-9172-77b2a36e48a5",
+    "colId": "fb0b7fb2-19ae-483e-bb5b-891528a95db3",
+    "containerId": "",
+    "name": "additem",
+    "url": "http://localhost:5000/api/menu/additem",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-03-14T11:10:10.990Z",
+    "modified": "2023-03-14T11:13:22.709Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Paneer Tikka\",\n  \"price\": 300,\n  \"tag\": \"Veg\",\n  \"genre\": \"Indian\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "6c38a780-c3e9-49cc-898c-dd3ac251a80a",
+    "colId": "fb0b7fb2-19ae-483e-bb5b-891528a95db3",
+    "containerId": "",
+    "name": "edititem",
+    "url": "http://localhost:5000/api/menu/edititem",
+    "method": "PUT",
+    "sortNum": 20000,
+    "created": "2023-03-14T11:14:10.076Z",
+    "modified": "2023-03-14T11:17:34.416Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"_id\": \"640ff43006819bf0879b6926\",\n  \"name\": \"Chicken Korma\",\n  \"price\": 300,\n  \"tag\": \"Non-Veg\",\n  \"genre\": \"Indian\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "0273c016-1633-4076-90c1-165fc7772adf",
+    "colId": "fb0b7fb2-19ae-483e-bb5b-891528a95db3",
+    "containerId": "",
+    "name": "deleteitem",
+    "url": "http://localhost:5000/api/menu/deleteitem/640ff43006819bf0879b6926",
+    "method": "DELETE",
+    "sortNum": 30000,
+    "created": "2023-03-14T11:17:56.110Z",
+    "modified": "2023-03-14T11:18:49.425Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
