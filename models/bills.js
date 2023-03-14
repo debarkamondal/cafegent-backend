@@ -5,8 +5,6 @@ const { Schema } = mongoose;
 const billSchema = new Schema({
   tableNo: {
     type: String,
-    required: true,
-    unique: true,
   },
   phone: {
     type: Number,

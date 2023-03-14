@@ -8,7 +8,7 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-03-14T10:51:18.477Z",
-    "modified": "2023-03-14T11:08:06.229Z",
+    "modified": "2023-03-14T19:42:58.615Z",
     "headers": [
       {
         "name": "Content-Type",
@@ -18,7 +18,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"tableNo\": \"2\"\n}",
+      "raw": "{\n  \"tableNo\": \"1\"\n}",
       "form": []
     },
     "tests": []
@@ -113,7 +113,7 @@
     "method": "PUT",
     "sortNum": 10000,
     "created": "2023-03-14T12:33:38.536Z",
-    "modified": "2023-03-14T12:50:21.697Z",
+    "modified": "2023-03-14T20:00:26.397Z",
     "headers": [
       {
         "name": "Content-Type",
@@ -121,7 +121,7 @@
       },
       {
         "name": "authToken",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZU5vIjoiMSIsInBob25lIjo4ODg4ODg4ODg4LCJfaWQiOiI2NDEwNTU3YTI1NmJiMWQwY2QzOWQ5ZWEiLCJpYXQiOjE2Nzg3OTcxODd9.gDnhc7mSLfwnnmVbNpGWYCxSeaBtPCokHRT88Kgxf4Y"
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZU5vIjoiMSIsInBob25lIjo4ODg4ODg4ODg4LCJfaWQiOiI2NDEwZDI0MzkzZTVmY2Y5NzZlOTNjYTciLCJpYXQiOjE2Nzg4MjQwMDZ9.AVcmrPOwzGAnG5bClkYYiip4w3nYBvfrewljXUn7uV4"
       }
     ],
     "params": [],
@@ -141,7 +141,7 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-03-14T13:10:21.370Z",
-    "modified": "2023-03-14T13:22:39.418Z",
+    "modified": "2023-03-14T20:00:52.057Z",
     "headers": [
       {
         "name": "Content-Type",
@@ -149,7 +149,7 @@
       },
       {
         "name": "authToken",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZU5vIjoiMSIsInBob25lIjo4ODg4ODg4ODg4LCJfaWQiOiI2NDEwNTU3YTI1NmJiMWQwY2QzOWQ5ZWEiLCJpYXQiOjE2Nzg3OTcxODd9.gDnhc7mSLfwnnmVbNpGWYCxSeaBtPCokHRT88Kgxf4Y"
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZU5vIjoiMSIsInBob25lIjo4ODg4ODg4ODg4LCJfaWQiOiI2NDEwZDI0MzkzZTVmY2Y5NzZlOTNjYTciLCJpYXQiOjE2Nzg4MjQwMDZ9.AVcmrPOwzGAnG5bClkYYiip4w3nYBvfrewljXUn7uV4"
       }
     ],
     "params": [],

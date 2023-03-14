@@ -8,20 +8,20 @@ const tableSchema = new Schema({
     required: true,
     unique: true,
   },
-  availability: {
-    type: Boolean,
-    default: true, // Tracking availability of the tables true = available false = unavailable
-  },
+  orders: [orders],
   phone: {
     type: Number,
     max: [9999999999, "The entered number is invalid"],
     min: [6000000000, "The entered number is invalid"],
   },
+  availability: {
+    type: Boolean,
+    default: true, // Tracking availability of the tables true = available false = unavailable
+  },
   date: {
     type: Date,
     default: Date.now,
   },
-  orders: [orders],
 });
 
 module.exports = mongoose.model("tables", tableSchema);
