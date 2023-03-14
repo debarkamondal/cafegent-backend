@@ -1,6 +1,6 @@
 const express = require("express");
-const table = require("../models/tables");
-const bill = require("../models/bills");
+const tables = require("../models/tables");
+const bills = require("../models/bills");
 const router = express.Router();
 const getUser = require("../middleware/getUser");
 
@@ -13,11 +13,15 @@ const getUser = require("../middleware/getUser");
 
 router.post("/generate", getUser, async (req, res) => {
   try {
-    let table = await table.findById(req.body._id);
+    let table = await tables.findById(req.body._id);
     if (!table) res.status(401).send("Order history not found");
 
+    //Checking for pending items
+    let pending = table.orders.filter((key) => key.status !== "Served");
+    if (pending) res.status(200).send(pending);
+    table.orders.filter;
     // creating new bill from table schema
-    const newBill = await bill.create({
+    const newBill = await bills.create({
       ...table.toObject(),
       orders: [...table.orders],
     });
