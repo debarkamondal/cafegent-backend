@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 const ordersSchema = new Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "bookTable",
+    ref: "tables",
   },
   orders: [
     {
