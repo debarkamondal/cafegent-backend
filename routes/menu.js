@@ -21,7 +21,8 @@ router.post("/addItem", async (req, res) => {
     });
     res.status(200).json(newMenuItem);
   } catch (error) {
-    res.status(500).send(error);
+    console.log(error);
+    res.status(500).send("some error occured");
   }
 });
 
