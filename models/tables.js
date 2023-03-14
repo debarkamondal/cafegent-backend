@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const orders = require("./orders");
 const { Schema } = mongoose;
 
 const tableSchema = new Schema({
@@ -20,6 +21,7 @@ const tableSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  orders: [orders],
 });
 
 module.exports = mongoose.model("tables", tableSchema);

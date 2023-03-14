@@ -51,7 +51,7 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-03-14T11:10:10.990Z",
-    "modified": "2023-03-14T11:13:22.709Z",
+    "modified": "2023-03-14T12:32:43.632Z",
     "headers": [
       {
         "name": "Content-Type",
@@ -61,7 +61,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"Paneer Tikka\",\n  \"price\": 300,\n  \"tag\": \"Veg\",\n  \"genre\": \"Indian\"\n}",
+      "raw": "{\n  \"name\": \"Mutton Barbeque\",\n  \"price\": 350,\n  \"tag\": \"Non-Veg\",\n  \"genre\": \"Indian\"\n}",
       "form": []
     },
     "tests": []
@@ -102,6 +102,34 @@
     "modified": "2023-03-14T11:18:49.425Z",
     "headers": [],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "dad2d678-ecf0-4095-8207-f5c446c3be88",
+    "colId": "65ba6079-66a8-4492-bef5-804b78916209",
+    "containerId": "",
+    "name": "create",
+    "url": "http://localhost:5000/api/order/create",
+    "method": "PUT",
+    "sortNum": 10000,
+    "created": "2023-03-14T12:33:38.536Z",
+    "modified": "2023-03-14T12:50:21.697Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "authToken",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZU5vIjoiMSIsInBob25lIjo4ODg4ODg4ODg4LCJfaWQiOiI2NDEwNTU3YTI1NmJiMWQwY2QzOWQ5ZWEiLCJpYXQiOjE2Nzg3OTcxODd9.gDnhc7mSLfwnnmVbNpGWYCxSeaBtPCokHRT88Kgxf4Y"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"orders\": [{\n    \"item\": \"641056d250bdf61ed8f84df1\",\n    \"quantity\": 7000\n  },\n  {\n    \"item\": \"6410696b474685e12b26eff9\",\n    \"quantity\": 1033\n  }]\n}",
+      "form": []
+    },
     "tests": []
   }
 ]

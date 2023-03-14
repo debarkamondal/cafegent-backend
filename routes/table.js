@@ -5,8 +5,8 @@ const jwt = require("jsonwebtoken");
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
-/**--------------------------------------------------------------------------------------------------------------------------------/
- * Create a new table "/api/table/create"
+/**----------------------------------------------------------- Create a new table ---------------------------------------------------------------------/
+ * *Endpoint: "/api/table/create"
  * ! Admin only API
  * TODO: create the specified number of tables from the req body.
  */
@@ -23,8 +23,8 @@ router.post("/create", async (req, res) => {
   }
 });
 
-/**--------------------------------------------------------------------------------------------------------------------------------/
- * Create a new table "/api/table/book"
+/**---------------------------------------------------------- Create a new table ----------------------------------------------------------------------/
+ * * Endpoint: "/api/table/book"
  * * Public API
  * @param bookTable : fetches and stores the information about the table to be booked
  */
@@ -48,6 +48,7 @@ router.put("/book", async (req, res) => {
     const data = {
       tableNo: bookTable.tableNo,
       phone: bookTable.phone,
+      _id: bookTable._id,
     };
     const authToken = jwt.sign(data, JWT_SECRET);
     res.json({ authToken });

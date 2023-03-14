@@ -14,6 +14,7 @@ app.use(cors());
 
 //Routes available
 app.use("/api/table", require("./routes/table"));
+app.use("/api/order", require("./routes/order"));
 app.use("/api/menu", require("./routes/menu")); //! ADMIN only !!!
 
 app.listen(port, () => {
