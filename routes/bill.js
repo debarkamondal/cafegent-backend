@@ -19,7 +19,7 @@ router.post("/generate", getUser, async (req, res) => {
     //Checking for pending items
     let pending = table.orders.filter((key) => key.status !== "Served");
     if (pending) res.status(200).send(pending);
-    table.orders.filter;
+
     // creating new bill from table schema
     const newBill = await bills.create({
       ...table.toObject(),
