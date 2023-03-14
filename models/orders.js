@@ -6,18 +6,18 @@ const ordersSchema = new Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "tables",
   },
-  orders: [
-    {
-      item: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "menuItems",
-      },
-      quantity: {
-        type: Number,
-        default: 1,
-      },
-    },
-  ],
+  item: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "menuItems",
+  },
+  quantity: {
+    type: Number,
+    default: 1,
+  },
+  status: {
+    type: String,
+    Enum: ["Accepted", "Preparing", "Ready", "Served"],
+  },
 });
 
 module.exports = mongoose.model("orders", ordersSchema);
