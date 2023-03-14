@@ -10,7 +10,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
  * ! Admin only API
  */
 
-router.post("/createtable", async (req, res) => {
+router.post("/create", async (req, res) => {
   // Booking table if the table is available
   try {
     const newTable = await table.create({
@@ -29,7 +29,7 @@ router.post("/createtable", async (req, res) => {
  * @param bookTable : fetches and stores the information about the table to be booked
  */
 
-router.put("/booktable", async (req, res) => {
+router.put("/book", async (req, res) => {
   try {
     let bookTable = await table.findOne({ tableNo: req.body.tableNo });
 
