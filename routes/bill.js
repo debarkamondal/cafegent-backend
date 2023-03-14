@@ -9,6 +9,7 @@ const getUser = require("../middleware/getUser");
  * Generates bill and clears out table
  * @param table fetches and stores all the data about table
  * @param newBill stores the data to be pushed as a bill to the DB
+ * @param pending stores pending food items
  */
 
 router.post("/generate", getUser, async (req, res) => {
