@@ -8,7 +8,7 @@ const tableSchema = new Schema({
     required: true,
     unique: true,
   },
-  orders: [orders],
+  orders: [orders],  // Uses orders schema as a subschema for this shchema/model
   phone: {
     type: Number,
     max: [9999999999, "The entered number is invalid"],
