@@ -14,7 +14,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 router.post("/create", async (req, res) => {
   try {
     const newTable = await table.create({
-      tableNo: req.body.tableNo,
+      table: req.body.table,
     });
     res.status(200).json(newTable);
   } catch (error) {
@@ -31,7 +31,7 @@ router.post("/create", async (req, res) => {
 
 router.put("/book", async (req, res) => {
   try {
-    let bookTable = await table.findOne({ tableNo: req.body.tableNo });
+    let bookTable = await table.findOne({ table: req.body.table });
 
     // Checking if the table is already booked or not
     if (!bookTable.availability) {
@@ -39,19 +39,19 @@ router.put("/book", async (req, res) => {
     }
 
     //* Updating table if it is available
-    bookTable.tableNo = req.body.tableNo;
+    bookTable.table = req.body.table;
     bookTable.phone = req.body.phone;
     bookTable.availability = false;
     bookTable.save();
 
     // Creating and sending JWT.
     const data = {
-      tableNo: bookTable.tableNo,
+      table: bookTable.table,
       phone: bookTable.phone,
       _id: bookTable._id,
     };
     const authToken = jwt.sign(data, JWT_SECRET);
-    res.json({ authToken });
+    res.status(200).json({ authToken });
   } catch (error) {
     console.log(error.message);
     res.status(500).send("Some error occured");

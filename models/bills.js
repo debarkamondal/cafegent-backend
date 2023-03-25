@@ -3,7 +3,7 @@ const orders = require("./orders");
 const { Schema } = mongoose;
 
 const billSchema = new Schema({
-  tableNo: {
+  table: {
     type: String,
   },
   phone: {

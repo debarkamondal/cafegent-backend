@@ -3,12 +3,12 @@ const orders = require("./orders");
 const { Schema } = mongoose;
 
 const tableSchema = new Schema({
-  tableNo: {
+  table: {
     type: String,
     required: true,
     unique: true,
   },
-  orders: [orders],  // Uses orders schema as a subschema for this shchema/model
+  orders: [orders], // Uses orders schema as a subschema for this shchema/model
   phone: {
     type: Number,
     max: [9999999999, "The entered number is invalid"],
