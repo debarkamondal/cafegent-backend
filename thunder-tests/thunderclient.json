@@ -51,7 +51,7 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-03-14T11:10:10.990Z",
-    "modified": "2023-03-18T18:05:04.520Z",
+    "modified": "2023-03-28T18:19:24.829Z",
     "headers": [
       {
         "name": "Content-Type",
@@ -61,7 +61,7 @@
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"Mutton Barbeque\",\n  \"price\": 350,\n  \"tag\": \"Non-Veg\",\n  \"genre\": \"Indian\"\n}",
+      "raw": "{\n  \"name\": \"Chicken Barbeque\",\n  \"price\": 250,\n  \"tag\": \"Non-Veg\",\n  \"genre\": \"Indian\"\n}",
       "form": []
     },
     "tests": []
@@ -152,6 +152,20 @@
         "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZU5vIjoiMSIsInBob25lIjo4ODg4ODg4ODg4LCJfaWQiOiI2NDE1ZmNmZTNlYzc5YTQ2Zjg5YTlhODEiLCJpYXQiOjE2NzkxNjI2Njh9.MJ66yGt3KphLFn9zZk0GQaOvIC_nHTWAcU-RAeuaF3U"
       }
     ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "5ef40960-653f-46a5-8422-a75820217953",
+    "colId": "fb0b7fb2-19ae-483e-bb5b-891528a95db3",
+    "containerId": "",
+    "name": "getItems",
+    "url": "http://localhost:5000/api/menu/getitems",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-03-28T18:24:03.403Z",
+    "modified": "2023-03-28T18:24:13.671Z",
+    "headers": [],
     "params": [],
     "tests": []
   }

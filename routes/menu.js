@@ -23,6 +23,18 @@ router.post("/additem", async (req, res) => {
   }
 });
 
+//--------------------------------------------Fetching all menu items--------------------------------------------//
+router.get("/getitems", async (req, res) => {
+  try {
+    const allMenuItems = await menuItems.find()
+    res.status(200).json(allMenuItems);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send("some error occured");
+  }
+});
+
+
 //-----------------------------------------------------Editing a menu item-------------------------------------------------------//
 
 router.put("/edititem", async (req, res) => {
